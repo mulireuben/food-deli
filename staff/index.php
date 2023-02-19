@@ -103,7 +103,7 @@ if (!isset($_SESSION['STAFF']['STAFFID'])) {
     <footer class="sticky-footer bg-white">
         <div class="container my-auto">
             <div class="copyright text-center my-auto">
-                <span>Copyright &copy; Swadesh Restaurant</span>
+                <span>Copyright &copy; BigFish Restaurant</span>
             </div>
         </div>
     </footer>

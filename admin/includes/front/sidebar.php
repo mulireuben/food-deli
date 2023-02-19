@@ -10,7 +10,7 @@
 				<div class="sidebar-brand-icon rotate-n-15">
 					<i class="fas fa-laugh-wink"></i>
 				</div>
-				<div class="sidebar-brand-text mx-3">Swadesh</div>
+				<div class="sidebar-brand-text mx-3">BigFish</div>
 			</a>
 
 			<!-- Divider -->
@@ -35,6 +35,8 @@
 					</div>
 				</div>
 			</li>
+			<!-- Divider -->
+			<hr class="sidebar-divider">
 
 			<!-- Divider -->
 			<hr class="sidebar-divider">
@@ -73,6 +75,8 @@
 					</div>
 				</div>
 			</li>
+			<!-- Divider -->
+			<hr class="sidebar-divider">
 
 			<!-- Nav Item - Utilities Collapse Menu -->
 			<!--       <li class="nav-item">
@@ -154,6 +158,7 @@
 					</div>
 				</div>
 			</li>
+			
 
 			<!-- Nav Item - Pages Collapse Menu -->
 			<li class="nav-item">
@@ -174,24 +179,24 @@
 			<hr class="sidebar-divider">
 
 			<!-- Heading -->
-			<div class="sidebar-heading">
-				Delivery Zipcodes
-			</div>
+			<!-- <div class="sidebar-heading">
+				Delivery Area codes
+			</div> -->
 
 			<!-- Nav Item - Pages Collapse Menu -->
-			<li class="nav-item">
+			<!-- <li class="nav-item">
 				<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseZipCode" aria-expanded="true" aria-controls="collapseZipCode">
 					<i class="fas fa-truck"></i>
 					<span>Zip Codes</span>
 				</a>
 				<div id="collapseZipCode" class="collapse <?php echo ZIP_DROPDOWN_SHOW ?>" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
 					<div class="bg-white py-2 collapse-inner rounded">
-						<h6 class="collapse-header">Modify Zip Codes:</h6>
+						<h6 class="collapse-header">Modify Area Codes:</h6>
 						<a class="collapse-item <?php echo VIEW_ZIP ?>" href="index?zip&modify">View/Remove/Modify</a>
 						<a class="collapse-item <?php echo ADD_ZIP ?>" href="index?zip&add">Add New</a>
 					</div>
 				</div>
-			</li>
+			</li> -->
 
 			<!-- Divider -->
 			<hr class="sidebar-divider">
@@ -236,12 +241,12 @@
 			</li> -->
 
 			<!-- Divider -->
-			<!-- <hr class="sidebar-divider d-none d-md-block"> -->
+			<hr class="sidebar-divider d-none d-md-block">
 
 			<!-- Sidebar Toggler (Sidebar) -->
-			<!--       <div class="text-center d-none d-md-inline">
+			      <div class="text-center d-none d-md-inline">
 				<button class="rounded-circle border-0" id="sidebarToggle"></button>
-			</div> -->
+			</div>
 
 		</ul>
 		<!-- End of Sidebar -->

@@ -80,7 +80,7 @@ class customer
 		              <div class="card border-0 shadow">
 		                <div class="card-body">
 		                    <h5 class="card-title mb-0"><a href="item?itid=' . base64_encode($item_id) . '" class="item-name">' . $item_title . '</a></h5>
-		                    <div class="card-text text-black-50">&#8377; ' . $item_price . '</div>
+		                    <div class="card-text text-black-50">Ksh ' . $item_price . '</div>
 		                    <div class="add-to-cart">
 		                        <a href="item?itid=' . base64_encode($item_id) . '&cart=' . base64_encode($item_id) . '"><img src="img/icons/addtocart.png" alt="Add to cart"></a> 
 		                    </div>  
@@ -191,7 +191,7 @@ class customer
 	              <div class="card border-0 shadow">
 	                <div class="card-body">
 	                    <h5 class="card-title mb-0"><a href="item?itid=' . base64_encode($item_id) . '" class="item-name">' . $item_title . '</a></h5>
-	                    <div class="card-text text-black-50">&#8377; ' . $item_price . '</div>
+	                    <div class="card-text text-black-50">Ksh ' . $item_price . '</div>
 	                    <div class="add-to-cart">
 	                        <a href="item?itid=' . base64_encode($item_id) . '&cart=' . base64_encode($item_id) . '"><img src="img/icons/addtocart.png" alt=""></a> 
 	                    </div>  
@@ -221,7 +221,7 @@ class customer
 					while (mysqli_stmt_fetch($this->send_query)) {
 						echo '
 				        <h1 class="my-4"><b>' . $item_title . '</b>
-				        <br><small>&#8377;&nbsp;' . $item_price . '</small>
+				        <br><small>Ksh&nbsp;' . $item_price . '</small>
 				        </h1>
 
 				        <img class="img-fluid" src="' . $item_image . '" alt="' . $item_image . '">
@@ -303,9 +303,9 @@ class customer
 		$_SERVER['SERVER_PORT'] == 80 ? $port = "http://" : $port = "https://";
 
 		$message = $port . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'] . '?key=' . base64_encode($verify_key) . '&s=2&email=' . base64_encode($email);
-		$subject = 'Swadesh Restaurant - Email verification';
+		$subject = 'BigFish Restaurant - Email verification';
 		// $mail->AddReplyTo($reply_to, $fname);
-		$mail->setFrom($mail->Username, 'Swadesh Restaurant'); // Set the sender of the message.
+		$mail->setFrom($mail->Username, 'BigFish Restaurant'); // Set the sender of the message.
 		$mail->addAddress($email, $name); // Set the recipient of the message.
 		// $mail->AddCC($cc, 'Kaushik - Website Form');	//CC email
 		$mail->Subject = $subject; // The subject of the message.
@@ -753,14 +753,14 @@ class customer
 		              <h6 class="my-0"><a class="item-cart-link" href="item?itid=' . base64_encode($item_id) . '">' . $item_title . '</a>&nbsp;(x' . $this->quantity . ')</h6>
 		              <small class="text-muted">Category: ' . $cat_title . '</small>
 		            </div>
-		            <span class="text-muted">&#8377;' . $sub_total . '</span>
+		            <span class="text-muted">' . $sub_total . '</span>
 		          </li>
 				';
 			}
 			echo '
 			<li class="list-group-item d-flex justify-content-between">
 				<span>Total</span>	            
-				<strong>&#8377;' . $total . '</strong>	       
+				<strong>Ksh' . $total . '</strong>	       
 			</li>
 			<li class="list-group-item d-flex justify-content-between">
 				<small class="text-muted">Additional charges might be applicable. <a href="cart">Goto cart</a> to see additional charges (if any).</small>
@@ -816,7 +816,7 @@ class customer
 		              <h6 class="my-0"><a class="item-cart-link" href="item?itid=' . base64_encode($item_id) . '">' . $item_title . '</a>&nbsp;(x' . $this->quantity . ')</h6>
 		              <small class="text-muted">Category: ' . $cat_title . '</small>
 		            </div>
-		            <span class="text-muted">&#8377;' . $sub_total . '</span>
+		            <span class="text-muted">Ksh' . $sub_total . '</span>
 		          </li>
 				';
 			}
@@ -828,11 +828,11 @@ class customer
 			echo '
 			<li class="list-group-item d-flex justify-content-between">
 				<span>Handling Charges</span>	            
-				<strong>&#8377;' . $handling . '</strong>	       
+				<strong>Ksh' . $handling . '</strong>	       
 			</li>
 			<li class="list-group-item d-flex justify-content-between">
 				<span>Total</span>	            
-				<strong>&#8377;' . $total . '</strong>	       
+				<strong>Ksh' . $total . '</strong>	       
 			</li>				          
 	        </ul>
 			';
@@ -903,7 +903,7 @@ class customer
                         </div>
                       </th>
                       <td class="s-column align-middle cart-data-no-padding"><a href="item?itid=' . base64_encode($item_id) . '&cart=' . base64_encode($item_id) . '" class="fa fa-plus-circle"></a>&nbsp;(x' . $this->quantity . ')&nbsp;<a href="item?itid=' . base64_encode($item_id) . '&reduce=' . base64_encode($item_id) . '" class="fa fa-minus-circle"></a></td>
-                      <td class="t-column align-middle cart-data-no-padding"><strong>&#8377; ' . $sub_total . '</strong></td>
+                      <td class="t-column align-middle cart-data-no-padding"><strong>Ksh ' . $sub_total . '</strong></td>
                       <td class="fr-column align-middle cart-data-no-padding">
 						<a href="cart?cart=' . base64_encode($item_id) . '&delete=' . base64_encode($item_id) . '" class="btn btn-danger btn-circle delete-btn-circle">
 						<i class="fas fa-trash"></i>
@@ -1171,9 +1171,9 @@ class customer
 
 		$message = "Hey " . $cust_name . ", Your order has been placed!\nORDER ID: " . $order_id . "\nTOTAL AMOUNT: " . $amount . "\nPAYMENT MODE: CASH ON DELIVERY\n";
 
-		$subject = 'Swadesh Restaurant - Order placed';
+		$subject = 'BigFish Restaurant - Order placed';
 		// $mail->AddReplyTo($reply_to, $fname);
-		$mail->setFrom($mail->Username, 'Swadesh Restaurant'); // Set the sender of the message.
+		$mail->setFrom($mail->Username, 'BigFish Restaurant'); // Set the sender of the message.
 		$mail->addAddress($email, $name); // Set the recipient of the message.
 		// $mail->AddCC($cc, 'Kaushik - Website Form');	//CC email
 		$mail->Subject = $subject; // The subject of the message.
@@ -1214,9 +1214,9 @@ class customer
 
 		$message = "Hey " . $cust_name . ", Your order has been placed!\nORDER ID: " . $order_id . "\nTOTAL AMOUNT: " . $amount . "\nPayment Mode: " . $payment_mode . "\nBank Transaction ID: " . $bank_trans_id . "\n";
 
-		$subject = 'Swadesh Restaurant - Order placed';
+		$subject = 'BigFish Restaurant - Order placed';
 		// $mail->AddReplyTo($reply_to, $fname);
-		$mail->setFrom($mail->Username, 'Swadesh Restaurant'); // Set the sender of the message.
+		$mail->setFrom($mail->Username, 'BigFish Restaurant'); // Set the sender of the message.
 		$mail->addAddress($email, $name); // Set the recipient of the message.
 		// $mail->AddCC($cc, 'Kaushik - Website Form');	//CC email
 		$mail->Subject = $subject; // The subject of the message.
@@ -1326,7 +1326,7 @@ class customer
 		$mail->SMTPAuth = true; // Whether you need to login. This is almost always required.
 		$mail->Username = $config['user']; // Your Gmail address.
 		$mail->Password = $config['pass']; // Your Gmail login password or App Specific Password.
-		$mail->setFrom($mail->Username, 'Swadesh Restaurant'); // Set the sender of the message.
+		$mail->setFrom($mail->Username, 'BigFish Restaurant'); // Set the sender of the message.
 		$mail->addAddress($receiver_email, $receiver_name); // Set the recipient of the message.
 		$mail->Subject = $subject; // The subject of the message.
 		$mail->Body = $message; // Set a plain text body.
@@ -1355,7 +1355,7 @@ class customer
 			}
 			if ($this->flag === 1) {
 				$name = $first_name . " " . $last_name;
-				$subject = "Swadesh Restaurant - Forgot Password";
+				$subject = "BigFish Restaurant - Forgot Password";
 				$message = "Click on the link below to change your password. This link expires in 5 minutes. \n";
 				if ($_SERVER['SERVER_PORT'] == 80) {
 					$host = "http://";

@@ -8,8 +8,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<link href="img/favicon.png" rel="icon">
-	<title>Swadesh Restaurant - Error</title>
+	<link href="img/bigfishlogo.png" rel="icon">
+	<title>BigFish Restaurant - Error</title>
 
 	<!-- Custom fonts for this template-->
 	<!-- <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"> -->
@@ -64,7 +64,7 @@
 			<footer class="sticky-footer bg-white">
 				<div class="container my-auto">
 					<div class="copyright text-center my-auto">
-						<span>Copyright &copy; Swadesh Restaurant</span>
+						<span>Copyright &copy; BigFish Restaurant</span>
 					</div>
 				</div>
 			</footer>

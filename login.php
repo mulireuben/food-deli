@@ -6,13 +6,13 @@ isset($_SESSION['CUSTOMER']) ? redirect("index") : 0;
 <html lang="en">
 
 <head>
-	<title>Swadesh Restaurant - Login</title>
+	<title>BigFish Restaurant - Login</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Google Fonts -->
 	<link rel="stylesheet" href="css/fonts.css">
 	<!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="img/favicon.png" />
+	<link rel="icon" type="image/png" href="img/bigfishlogo.png" />
 	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
 	<!--===============================================================================================-->
@@ -60,7 +60,7 @@ isset($_SESSION['CUSTOMER']) ? redirect("index") : 0;
 				<div class="login100-more" style="background-image: url('loginpage/images/login_copy.jpg');">
 					<div id="header">
 						<div id="logo" class="pull-left">
-							<h1><a href="index#intro" class="scrollto">Swadesh</a></h1>
+							<h1><a href="index#intro" class="scrollto">BigFish</a></h1>
 							<!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
 						</div>
 					</div>

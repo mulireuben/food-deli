@@ -47,7 +47,7 @@
 						include 'PaytmKit/pgResponse.php';
 					} else {
 						echo '<h1 class="display-3">Thank You!</h1>';
-						echo '<p class="lead">Your order (ID: ' . $_POST['ORDERID'] . ') should be arriving soon. <strong>Please check your email</strong> for the order bill/receipt. Please keep &#8377; ' . $_POST['AMOUNT'] . ' cash ready. </p>';
+						echo '<p class="lead">Your order (ID: ' . $_POST['ORDERID'] . ') should be arriving soon. <strong>Please check your email</strong> for the order bill/receipt. Please keep Ksh ' . $_POST['AMOUNT'] . ' cash ready. </p>';
 						$cust->place_order_cash($_POST['ORDERID'], $_POST['CUSTID'], $_POST['AMOUNT'], $_SESSION['CUSTOMER']['ADDRESSID']);
 						$cust->mail_order_cash($_POST['ORDERID'], $_POST['AMOUNT'], $_SESSION['CUSTOMER']['NAME'], $_SESSION['CUSTOMER']['EMAIL']);
 						unset($_SESSION['CUSTOMER']['ADDRESSID']);

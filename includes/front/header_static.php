@@ -2,8 +2,8 @@
     <div class="container-fluid">
 
       <div id="logo" class="pull-left">
-        <h1><a href="index#intro" class="scrollto">Swadesh</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
+        <h1><a href="index#intro" class="scrollto"> BigFish</a></h1>
+        <!-- image logo -->
         <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
       </div>
 

@@ -57,7 +57,7 @@ if (isset($_POST['total_amount']) && isset($_POST['quantity']) && isset($_POST['
 							<form class="needs-validation was-validated" method="POST" action="payment">
 								<div class="row">
 									<div class="col-md-12 mb-3">
-										<label for="firstName">Name <span class="text-note">&nbsp;(Cannot be modified)</span></label>
+										<label for="firstName">Name <span class="text-note">&nbsp;</span></label>
 										<input type="text" class="form-control" name="fname" id="firstName" placeholder="<?php echo $_SESSION['CUSTOMER']['NAME']; ?>" pattern=".{1,}[a-zA-Z]" required="" disabled="">
 										<div class="invalid-feedback">
 											Valid first name is required.
@@ -66,7 +66,7 @@ if (isset($_POST['total_amount']) && isset($_POST['quantity']) && isset($_POST['
 								</div>
 
 								<div class="mb-3">
-									<label for="email">Email <span class="text-note">&nbsp;(Cannot be modified)</span></label>
+									<label for="email">Email <span class="text-note"></span></label>
 									<input type="email" disabled class="form-control" name="email" id="email" placeholder="<?php echo $_SESSION['CUSTOMER']['EMAIL']; ?>">
 									<div class="invalid-feedback">
 										Please enter a valid email address for shipping updates.
@@ -82,35 +82,26 @@ if (isset($_POST['total_amount']) && isset($_POST['quantity']) && isset($_POST['
 								</div>
 
 								<div class="mb-3">
-									<label for="address2">Address Line 2 <span class="text-muted">(Optional)</span></label>
+									<label for="address2">Address Line 2 <span class="text-muted"></span></label>
 									<input type="text" class="form-control" name="address2" id="address2" placeholder="Apartment or suite">
 								</div>
 
 								<div class="row">
-									<div class="col-md-4 mb-3">
-										<label for="country">Zip</label>
-										<select class="custom-select d-block w-100" id="country" name="zip" required="">
-											<option value="" selected="selected">Choose...</option>
-											<?php $cust->display_pincodes(); ?>
-										</select>
-										<div class="invalid-feedback">
-											Please select a valid zip code.
-										</div>
-									</div>
-									<div class="col-md-4 mb-3">
-										<label for="state">State</label>
+							
+									<div class="col-md-4 mb-6">
+										<label for="state">City</label>
 										<select disabled class="custom-select d-block w-100" id="state" required="">
 											<!-- <option value="" selected="selected">Choose...</option> -->
-											<option value="Karnataka">Karnataka</option>
+											<option value="Nairobi">Nairobi</option>
 										</select>
 										<div class="invalid-feedback">
-											Please provide a valid state.
+											Please provide a valid county.
 										</div>
 									</div>
-									<div class="col-md-4 mb-3">
-										<label for="zip">City</label>
+									<div class="col-md-4 mb-6">
+										<label for="zip">Country</label>
 										<select disabled class="custom-select d-block w-100" id="zip" required="">
-											<option value="Mangalore">Mangalore</option>
+											<option value="Nairobi">Kenya</option>
 										</select>
 										<!-- <input disabled type="text" class="form-control" id="zip" placeholder="" required=""> -->
 										<div class="invalid-feedback">
@@ -124,15 +115,9 @@ if (isset($_POST['total_amount']) && isset($_POST['quantity']) && isset($_POST['
 											Valid phone number required.
 										</div>
 									</div>
-									<div class="col-md-6 mb-3">
-										<label for="lastName">Alternate Phone Number</label>
-										<input type="tel" class="form-control" name="alt_phone_number" id="lastName" placeholder="" pattern="[0-9]{10}" maxlength="10" minlength="10">
-										<div class="invalid-feedback">
-											Valid phone number is required.
-										</div>
-									</div>
+									
 								</div>
-								<span class="text-note">If you cannot find your zip code in the drop-down, we do not deliver to your location yet!</span>
+
 								<hr class="mb-4">
 								<hr class="mb-4">
 
@@ -145,14 +130,14 @@ if (isset($_POST['total_amount']) && isset($_POST['quantity']) && isset($_POST['
 									</div>
 									<div class="custom-control custom-radio">
 										<input id="debit" name="payment_method" type="radio" value="prepaid" class="custom-control-input" required="">
-										<label class="custom-control-label" for="debit">Credit Card / Debit Card / UPI / PayTM wallet</label>
+										<label class="custom-control-label" for="debit">Credit Card / Debit Card </label>
 									</div>
 								</div>
 								<input type="hidden" name="TXN_AMOUNT" value="<?php echo sprintf("%.2f", $cust->amountToPay); ?>">
 								<input type="hidden" name="ORDER_ID" value="<?php echo rand(1, getrandmax()); ?>">
 								<input type="hidden" name="CUST_ID" value="<?php echo $_SESSION['CUSTOMER']['CUSTOMERID']; ?>">
-								<input type="hidden" name="state" value="Karnataka">
-								<input type="hidden" name="city" value="Mangalore">
+								<input type="hidden" name="state" value="Nairobi">
+								<input type="hidden" name="city" value="Kenya">
 
 								<hr class="mb-4">
 								<button class="btn btn-dark btn-lg btn-block shadow-button" type="submit" name="address_submit">Place Order</button>

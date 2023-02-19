@@ -116,7 +116,7 @@ else if(isset($_GET['prod']) && isset($_GET['modify_prod']) && $_GET['modify_pro
             <div class="col-md-5 mb-3">
                 <div class="insert-content">
                     <div class="form-row insert-content">
-                            <label for="validationCustom03">Item Price&nbsp;(&#8377;)</label>
+                            <label for="validationCustom03">Item Price&nbsp;(Ksh)</label>
                             <input type="text" class="form-control" name="item_price" id="validationCustom03" placeholder="199" required="" pattern="([0-9]){2,}" value="<?php echo $row['item_price']; ?>" data-toggle="tooltip" data-placement="top" title="" data-original-title="Min 2 digits, Max 6 digits" title="">
                             <div class="valid-feedback">
                                 Looks good!

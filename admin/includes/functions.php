@@ -705,7 +705,7 @@ class admin
 	                    <p class="lead">Item ID: ' . $item_id . '</p>
 	                    <p class="lead">Category: ' . $cat_title . '</p>
 	                    <p class="lead">Sub-category: ' . $sub_cat_title . '</p>
-	                    <p class="lead">Item Price: &#8377; ' . $item_price . '</p>
+	                    <p class="lead">Item Price: Ksh ' . $item_price . '</p>
 	                </div>
 	                <div class="col-md-6">
 	                    <!-- <h1 class="display-4">Fluid jumbotron</h1> -->
@@ -751,7 +751,7 @@ class admin
                         <td><a data-toggle="tooltip"  data-placement="top" title="" data-original-title="Click to modify" href="index?prod&modify_prod=1&id=' . base64_encode($item_id) . '">' . $item_id . '</a></td>
                         <td><a data-toggle="tooltip"  data-placement="top" title="" data-original-title="Click to modify" href="index?prod&modify_prod=1&id=' . base64_encode($item_id) . '">' . $item_title . '</a></td>
                         <td><a data-toggle="tooltip"  data-placement="top" title="" data-original-title="Click to modify" href="index?prod&modify_prod=1&id=' . base64_encode($item_id) . '"><img class="img-fluid table-image" src="../' . $item_image . '"></a></td>
-                        <td>&#8377;&nbsp;' . $item_price . '&nbsp;</td>
+                        <td>Ksh&nbsp;' . $item_price . '&nbsp;</td>
                         <td>' . $cat_title . '</td>
                         <td>' . $sub_cat_title . '</td>
                         <td>' . $date_added . '</td>
@@ -980,7 +980,7 @@ class admin
 		           		<tr>
 	                        <td><a data-toggle="tooltip"  data-placement="top" title="" data-original-title="Click to view address & payment details" href="index?view_orders&ordid=' . base64_encode($order_id) . '&ordstatus">' . $order_id . '</a></td>
 	                        <td><a data-toggle="tooltip"  data-placement="top" title="" data-original-title="Click to view address & payment details" href="index?view_orders&ordid=' . base64_encode($order_id) . '&ordstatus">' . $item_title . '</a></td>
-	                        <td>&#8377;&nbsp;' . $amount . '&nbsp;</td>
+	                        <td>Ksh&nbsp;' . $amount . '&nbsp;</td>
 	                        <td>' . $order_date . '</td>
 	                        <td>' . $payment_mode . '</td>
 	                        <td><div class="badge badge-danger">' . $order_status . '</div></td>
@@ -1004,7 +1004,7 @@ class admin
 		           		<tr>
 	                        <td><a data-toggle="tooltip"  data-placement="top" title="" data-original-title="Click to view address & payment details" href="index?view_orders&ordid=' . base64_encode($order_id) . '&ordstatus">' . $order_id . '</a></td>
 	                        <td><a data-toggle="tooltip"  data-placement="top" title="" data-original-title="Click to view address & payment details" href="index?view_orders&ordid=' . base64_encode($order_id) . '&ordstatus">' . $item_title . '</a></td>
-	                        <td>&#8377;&nbsp;' . $amount . '&nbsp;</td>
+	                        <td>Ksh&nbsp;' . $amount . '&nbsp;</td>
 	                        <td>' . $order_date . '</td>
 	                        <td>' . $payment_mode . '</td>
 	                        <td><div class="badge badge-danger">' . $order_status . '</div></td>
@@ -1037,7 +1037,7 @@ class admin
 			} else if (base64_decode($_GET['status']) == "transit") {
 				$order_status = "ON TRANSIT. YOUR ORDER IS ON THE WAY.";
 			} else if (base64_decode($_GET['status']) == "delivered") {
-				$order_status = "ORDER DELIVERED. ENJOY!";
+				$order_status = "ORDER DELIVERED.";
 			}
 
 			$order_id = base64_decode($_GET['ordid']);
@@ -1145,7 +1145,7 @@ class admin
 				mysqli_stmt_bind_result($this->send_query, $first_name, $last_name, $email, $address_line_1, $address_line_2, $city, $state, $pin, $contact_number, $alternative_contact_number, $customer_id, $transaction_type, $amount);
 				if (mysqli_stmt_execute($this->send_query) && mysqli_stmt_fetch($this->send_query)) {
 					if ($transaction_type == "CASH") {
-						$cash_to_collect = '<h6 class="m-0 font-weight-bold text-primary">Cash to collect: &#8377;&nbsp;' . $amount . '</h6>';
+						$cash_to_collect = '<h6 class="m-0 font-weight-bold text-primary">Cash to collect: Ksh&nbsp;' . $amount . '</h6>';
 					} else {
 						$cash_to_collect = "";
 					}

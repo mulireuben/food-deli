@@ -26,7 +26,7 @@
 <body>
 	<form class="form-signin needs-validation" method="POST" action="login" novalidate>
 		<div class="text-center">
-			<img class="mb-4" src="../img/favicon.png" alt="" width="72" height="72">
+			<img class="mb-4" src="../img/bigfishlogo.png" alt="" width="72" height="72">
 			<h1 class="h3 mb-3 font-weight-normal">Sign in - Admin</h1>
 			<?php $admin->login(); ?>
 		</div>

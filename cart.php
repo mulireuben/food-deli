@@ -68,7 +68,7 @@
 							<div class="p-4">
 								<p class="mb-4">Handling charges will be charged based on the order quantity.</p>
 								<ul class="list-unstyled mb-4">
-									<li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Order Subtotal </strong><strong>&#8377;&nbsp;<?php echo $cust->totalPrice; ?></strong></li>
+									<li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Order Subtotal </strong><strong>Ksh &nbsp;<?php echo $cust->totalPrice; ?></strong></li>
 									<?php
 									if ($cust->totalQuantity > 2 || $cust->totalQuantity === 0) {
 										$cust->handling = 0;
@@ -76,12 +76,12 @@
 										$cust->handling = 40;
 									}
 									?>
-									<li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Handling charges</strong><strong>&#8377;&nbsp;<?php echo $cust->handling; ?></strong></li>
+									<li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Handling charges</strong><strong>Ksh &nbsp;<?php echo $cust->handling; ?></strong></li>
 									<?php
 									$cust->amountToPay = $cust->totalPrice + $cust->handling;
 									?>
 									<li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Total</strong>
-										<h5 class="font-weight-bold">&#8377;&nbsp;<?php echo $cust->amountToPay; ?></h5>
+										<h5 class="font-weight-bold">Ksh&nbsp;<?php echo $cust->amountToPay; ?></h5>
 									</li>
 								</ul>
 								<?php

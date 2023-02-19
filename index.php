@@ -26,7 +26,7 @@ include("includes/front/top.php");
 						<div class="carousel-container">
 							<div class="carousel-content">
 								<h2>Welcome</h2>
-								<p>Hey there! Hungry? You're at the right place. You can choose from various food items from our menu divided into different categories to fulfill all your hunger fetishes. Home delivery available 24x7 throughout Mangalore.</p>
+								<p>Hey there! Hungry? You're at the right place. You can choose from various food items from our menu divided into different categories to fulfill all your hunger fetishes. Home delivery available 24/7 Within Nairobi.</p>
 								<a href="#services" class="btn-get-started scrollto">View our menu</a>
 							</div>
 						</div>
@@ -47,7 +47,7 @@ include("includes/front/top.php");
 
 				<header class="section-header">
 					<h3>About Us</h3>
-					<p>We are one of the best restaurants in Mangalore striving to provide exellence in food. Our chefs are the best in town and the quality is a cut above which makes us stand out from all other places.</p>
+					<p>We are one of the best restaurants in Nairobi striving to provide exellence in food. Our chefs are the best in town and the quality is a cut above which makes us stand out from all other places.</p>
 				</header>
 
 				<div class="row about-cols">
@@ -73,7 +73,7 @@ include("includes/front/top.php");
 							</div>
 							<h2 class="title"><a href="#">Our Plan</a></h2>
 							<p>
-								Reach out to youngsters in every corner of Mangalore and provide excellent food quality and services throught social media and online presence.
+								Reach out to youngsters in every corner of Nairobi and provide excellent food quality and services throught social media and online presence.
 							</p>
 						</div>
 					</div>
@@ -86,7 +86,7 @@ include("includes/front/top.php");
 							</div>
 							<h2 class="title"><a href="#">Our Vision</a></h2>
 							<p>
-								Extend our brances from Mangalore to other places in the near future. Providing franchises to the ones interested in entrepreneurship and those who are passionate about it.
+								Extend our brances from Nairobi to other places in the near future. Providing franchises to the ones interested in entrepreneurship and those who are passionate about it.
 							</p>
 						</div>
 					</div>
@@ -136,7 +136,7 @@ include("includes/front/top.php");
 						<div class="contact-address">
 							<i class="ion-ios-location-outline"></i>
 							<h3>Address</h3>
-							<address>Amuruthmahal, Near Checkpost, Vamanjoor, Mangalore, India</address>
+							<address>Roasters, Garden Estate Rd, opp Roasters Inn, Nairobi, Kenya</address>
 						</div>
 					</div>
 
@@ -144,7 +144,7 @@ include("includes/front/top.php");
 						<div class="contact-phone">
 							<i class="ion-ios-telephone-outline"></i>
 							<h3>Phone Number</h3>
-							<p><a href="tel:+91824 2262593">0824 2262593</a></p>
+							<p><a href="tel:+91824 2262593">0715148388</a></p>
 						</div>
 					</div>
 
@@ -152,7 +152,7 @@ include("includes/front/top.php");
 						<div class="contact-email">
 							<i class="ion-ios-email-outline"></i>
 							<h3>Email</h3>
-							<p><a href="mailto:info@example.com">swadesh@kproj.me</a></p>
+							<p><a href="mailto:info@example.com">restaurant@bigfish.com</a></p>
 						</div>
 					</div>
 

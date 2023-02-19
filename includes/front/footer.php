@@ -7,7 +7,7 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-info">
-            <h3>Swadesh Restaurant</h3>
+            <h3>BigFish Restaurant</h3>
             <p>Prices may be subject to applicable taxes and charges and may also change without prior notice. Please check prices on the website before ordering.</p>
           </div>
 
@@ -25,9 +25,9 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <h4 class="footer-h4">Contact Us</h4>
             <p>
-              Amuruthmahal, Near Checkpost<br> Vamanjoor, Mangalore<br>Karnataka, India<br>
-              <strong>Phone:</strong>  0824 2262593<br>
-              <strong>Email:</strong> swadesh@kproj.me<br>
+              Roasters, Garden Estate Rd<br> Opp Roasters inn, Nairobi<br>Kenya<br>
+              <strong>Phone:</strong>  0715148388<br>
+              <strong>Email:</strong> restaurant@bigfish.com<br>
             </p>
 
             <div class="social-links">
@@ -54,7 +54,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>Swadesh Restaurant</strong>. All Rights Reserved
+        &copy; Copyright <strong>BigFish Restaurant</strong>. All Rights Reserved
       </div>
       <div class="credits">
 
